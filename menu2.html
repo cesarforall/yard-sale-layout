@@ -5,6 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
         <style>
             /* prettier-ignore */
             :root {
@@ -22,6 +25,44 @@
             body {
                 font-family: 'Quicksand', sans-serif;
                 /* font-family: 'Roboto', sans-serif; */
+            }
+
+            .mobile-menu {
+                padding: 24px;
+            }
+
+            .mobile-menu ul {
+                margin: 24px 0 0;
+                padding: 0;
+                list-style: none;
+            }
+
+            .mobile-menu ul:nth-child(1) {
+                border-bottom: 1px solid var(--very-light-pink);
+            }
+
+            .mobile-menu ul:last-child {
+                position: absolute;
+                bottom: 0;
+            }
+
+            .mobile-menu ul li {
+                margin-bottom: 24px;
+            }
+
+            .mobile-menu a {
+                font-weight: bold;
+                color: var(--black);
+                text-decoration: none;
+            }
+
+            .email {
+                font-size: var(--sm);
+                font-weight: 400;
+            }
+
+            .mobile-menu .sign-out {
+                color: var(--hospital-green);
             }
         </style>
     </head>
