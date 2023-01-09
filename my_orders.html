@@ -7,6 +7,76 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <style>
+            /* prettier-ignore */
+            :root {
+                --very-light-pink: #C7C7C7;
+                --white: #FFFFFF;
+                --text-input-field: #F7F7F7;
+                --black: #000000;
+                --hospital-green: #ACD9B2;
+                --dark: #232830;
+                --sm: 14px;
+                --md: 16px;
+                --lg: 18px;
+            }
+
+            body {
+                font-family: 'Quicksand', sans-serif;
+                /* font-family: 'Roboto', sans-serif; */
+            }
+
+            .my-orders {
+                display: grid;
+                width: 100%;
+                height: 100vh;
+                place-items: center;
+            }
+
+            .my-orders-container {
+                display: grid;
+                grid-template-rows: auto 1fr auto;
+                width: 300px;
+            }
+
+            .title {
+                margin-bottom: 40px;
+                font-size: var(--lg);
+            }
+
+            .my-orders-content {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .order {
+                display: grid;
+                grid-template-columns: auto 1fr auto;
+                gap: 16px;
+                align-items: center;
+                margin-bottom: 12px;
+            }
+
+            .order p:nth-child(1) {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .order p span:nth-child(1) {
+                font-size: var(--md);
+                font-weight: bold;
+            }
+
+            .order p span:nth-child(2) {
+                font-size: var(--sm);
+                color: var(--very-light-pink);
+            }
+
+            .order p:nth-child(2) {
+                text-align: end;
+                font-weight: 700;
+            }
+        </style>
     </head>
     <body>
         <div class="my-orders">
