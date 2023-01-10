@@ -29,6 +29,102 @@
             body {
                 margin: 0;
             }
+
+            nav {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px 24px;
+                box-shadow: 0px -1px 6px 0px var(--very-light-pink);
+            }
+
+            .menu {
+                display: none;
+            }
+
+            .logo {
+                width: 100px;
+            }
+
+            .navbar-left {
+                display: flex;
+            }
+
+            .navbar-left ul,
+            .navbar-right ul {
+                display: flex;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+            .navbar-left ul {
+                margin-left: 12px;
+                gap: 2px;
+            }
+
+            .navbar-left ul li a,
+            .navbar-right ul li a {
+                border: 1px solid var(--white);
+                border-radius: 8px;
+                padding: 2px 8px;
+                text-decoration: none;
+                color: var(--very-light-pink);
+            }
+
+            .navbar-left ul li a:hover,
+            .navbar-right ul li a:hover {
+                border: 1px solid var(--hospital-green);
+                color: var(--hospital-green);
+            }
+
+            .navbar-email {
+                margin-right: 12px;
+                font-size: var(--sm);
+                color: var(--black);
+            }
+            .navbar-email p{
+                display: inline-block;
+            }
+            .navbar-email img{
+                transform: rotate(90deg);
+                padding-left: 4px;
+                margin-left: 10px;
+            }
+
+            .navbar-shopping-cart {
+                position: relative;
+                padding-top: 5px;
+            }
+
+            .navbar-shopping-cart div{
+                position: absolute;
+                top: -2px;
+                right: -3px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                width: 16px;
+                height: 16px;
+                opacity: .8;
+                background: var(--hospital-green);
+                font-size: var(--sm);
+                font-weight: bold;
+            }
+
+            @media (max-width: 800px) {
+                .menu {
+                    display: block;
+                }
+
+                .navbar-left ul {
+                    display: none;
+                }
+                .navbar-email {
+                    display: none;
+                }
+            }
         </style>
     </head>
     <body>
